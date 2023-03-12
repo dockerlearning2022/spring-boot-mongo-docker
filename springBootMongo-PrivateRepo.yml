@@ -13,9 +13,9 @@ spec:
         name: springboot
     spec:
       imagePullSecrets:
-      - name: my-registry-key-two
+      - name: my-registry-key
       containers:
-      - image: 242703769935.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo
+      - image: 242703769935.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo:${buildNumber}
         name: springboot
         ports:
         - name: springboot
