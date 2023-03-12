@@ -13,7 +13,7 @@ spec:
         name: springboot
     spec:
       imagePullSecrets:
-      - name: ecrregistrycredentails
+      - name: my-registry-key 
       containers:
       - image: 242703769935.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo
         name: springboot
